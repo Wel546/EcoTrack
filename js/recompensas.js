@@ -15,10 +15,11 @@ botoes.forEach(botao => {
         const nomeRecompensa = card.getAttribute('data-nome');
 
         if (pontos >= custo) {
+            // Desconta pontos
             pontos -= custo;
             localStorage.setItem('pontos', pontos);
 
-            // Armazena temporariamente a recompensa escolhida para mostrar na próxima página
+            // Armazena temporariamente a recompensa coletada
             localStorage.setItem('recompensaColetada', nomeRecompensa);
 
             // Simula envio de e-mail (console)
@@ -27,7 +28,8 @@ botoes.forEach(botao => {
             // Redireciona para a tela de confirmação
             window.location.href = 'confirmacao.html';
         } else {
-            alert('Pontos insuficientes para essa recompensa!');
+            // Redireciona para a tela de erro por pontos insuficientes
+            window.location.href = 'erro_recompensa.html';
         }
     });
 });

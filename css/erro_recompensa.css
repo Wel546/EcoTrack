@@ -19,11 +19,11 @@ body {
 .container img{
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 120px;
 }
 
 h1 {
-    color: black;
+    color: #cf2619;
     margin-bottom: 20px;
 }
 
@@ -45,33 +45,4 @@ p {
 
 .btn:hover {
     background-color: #29af85;
-}
-
-/* Efeito de fade-in na entrada */
-body {
-    animation: fadeIn 0.8s ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-body {
-    animation: fadeInMove 0.8s ease;
-}
-
-@keyframes fadeInMove {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
