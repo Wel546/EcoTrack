@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5ffc3;
+    color: #333;
+}
+
+header {
+    background-color: #34d6a3;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header .user-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+header img {
+    width: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.card.desafios ul li{
+    list-style: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #34d6a3;
+    margin-bottom: 10px;
+}
+
+
+.card.pontos p {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #34d6a3;
+    color: black;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #39b88f;
+}
+
+.btn.sair {
+    background-color: #cf2619;
+}
+
+.btn.sair:hover {
+    background-color: #e53935;
+}
+
+/* Efeito de fade-in na entrada */
+body {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeInMove 0.8s ease;
+}
+
+@keyframes fadeInMove {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

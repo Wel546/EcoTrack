@@ -1,0 +1,132 @@
+/* Mantém tudo que já tinha */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5ffc3;
+    color: #333;
+}
+
+header {
+    background-color: #34d6a3;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header img{
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+
+}
+
+main {
+    padding: 20px;
+}
+
+.ranking-lista, .grafico {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.ranking-lista h2, .grafico h2 {
+    color: #34d6a3;
+    margin-bottom: 15px;
+}
+
+ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+ol li {
+    background-color: #e8f5e9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+canvas {
+    max-width: 100%;
+}
+
+.botoes {
+    margin-top: 20px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    background-color: #34d6a3;
+    color: black;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+ol li {
+    background-color: #e8f5e9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+ol li:first-child {
+    background-color: #fff8e1; /* Ouro claro */
+}
+
+ol li:nth-child(2) {
+    background-color: #eceff1; /* Prata clara */
+}
+
+ol li:nth-child(3) {
+    background-color: #fbe9e7; /* Bronze claro */
+}
+
+/* Efeito de fade-in na entrada */
+body {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeInMove 0.8s ease;
+}
+
+@keyframes fadeInMove {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
